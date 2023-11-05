@@ -1,0 +1,186 @@
+/*EFECTO PARA LAS PARTICULAS*/
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+/*FUENTE DE LA PAGINA, ESTA ES LOCAL NO DE GOOGLE FONTS*/
+@font-face {
+    font-family: hollowknighttype;
+    src: url(../Tipografias/Cinzel-Regular.ttf);
+}
+
+body{
+    background-color: black;
+    
+}
+
+/*ENCABEZADO *-------------------------* */
+.tituloPrincipal{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.tituloPrincipal img{
+   
+    width: 45%;
+    height: 45%;
+    margin: 0 0 5% 0;
+    
+
+}
+
+ nav{
+    top: 0%;
+    right: 0%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 25px;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: hollowknighttype;
+}
+p{
+    color: white;
+}
+ /*****-----pagina HOME------*******/
+.contenedor{
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+
+    /*Grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imagencaballero{
+    padding: 25px;
+   
+}
+.imagencaballero img{
+   width: 100%;
+   box-shadow: 0 0 0 0px black, 0 0 50px rgb(38, 38, 38), 0 0 100px rgb(46, 45, 45);
+}
+.presentacion{
+    justify-content: center;
+    text-align: center;
+}
+.presentacion img{
+    height: 40%;
+    width: 40%;
+    
+    
+}
+.presentacion p{
+    margin: 5%;
+    font-size: 20px;
+    font-family: hollowknighttype;
+}
+
+
+/*---------------INVENTARIO----------------*/
+.binventario{
+    background-image: url("../Fondos/FInventario.jpg");
+    background-size: 100% 100%;
+    backdrop-filter: blur(3px);
+}
+.tituloInventario{
+    font-family: hollowknighttype;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 0px 15px 0 15px;
+    margin: 50px 0 0 0;
+}
+.contenedor-inventario{
+    margin: 0% 50px 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    column-gap: 5px;
+    row-gap: 5px; 
+    
+}
+
+
+.arms{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    padding: 0px 10px 0px 10px;
+    /*column-gap: 5px;
+    row-gap: 5px;*/
+    border-right: 1px solid white;
+     }
+.arms #arms1 img{
+    width: 85%;
+}
+.espada img{
+    width: 65%;
+}
+.powers{
+    grid-area: 2 / 2 /3 /4;
+}
+.powers{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+.sombras{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    
+}
+.habilidades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.sombras img{
+    width: 100%;
+}
+/*.mascara img , .vasija img , .aguijononirico img {
+    width: 85%;
+}*/
+
+.objetos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid white;
+    align-items: center;
+}
+.objetos img{
+    width: 85%;
+}
+
+
+.informacion{
+    font-family: hollowknighttype;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+.informacion p, h1, h2{
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+.informacion h1{
+    font-size: 25px;
+}
